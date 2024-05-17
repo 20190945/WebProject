@@ -1,31 +1,24 @@
-import { useState } from 'react';
-import { Header } from './components/Header';
-import { ProductList } from './components/ProductList';
+import { Routes, Route } from 'react-router-dom';
+import Inicio from './components/Inicio';
+import Mas_vendidos from './components/Mas_vendidos';
+import Nuevos from './components/Nuevos';
+import Ofertas from './components/Ofertas';
+import Ayuda from './components/Ayuda';
+import Cuenta from './components/Cuenta';
+
 
 function App() {
-	const [allProducts, setAllProducts] = useState([]);
-	const [total, setTotal] = useState(0);
-	const [countProducts, setCountProducts] = useState(0);
-
 	return (
-		<>
-			<Header
-				allProducts={allProducts}
-				setAllProducts={setAllProducts}
-				total={total}
-				setTotal={setTotal}
-				countProducts={countProducts}
-				setCountProducts={setCountProducts}
-			/>
-			<ProductList
-				allProducts={allProducts}
-				setAllProducts={setAllProducts}
-				total={total}
-				setTotal={setTotal}
-				countProducts={countProducts}
-				setCountProducts={setCountProducts}
-			/>
-		</>
+		<div className='Aplication'>
+			<Routes>
+				<Route path='/' element={ <Inicio/> }/>
+				<Route path='/mas_vendidos' element={ <Mas_vendidos/> }/>
+				<Route path='/nuevos' element={ <Nuevos/> }/>
+				<Route path='/ofertas' element={ <Ofertas/> }/>
+				<Route path='/ayuda' element={ <Ayuda/> }/>
+				<Route path='/cuenta' element={ <Cuenta/> }/>
+			</Routes>
+		</div>
 	);
 }
 

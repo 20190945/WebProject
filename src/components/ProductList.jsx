@@ -1,28 +1,29 @@
+import React from 'react';
 import { data } from '../data';
 
-export const ProductList = ({
+function ProductList({
 	allProducts,
 	setAllProducts,
 	countProducts,
 	setCountProducts,
 	total,
 	setTotal,
-}) => {
-	const onAddProduct = product => {
+}) {
+	const onAddProduct = (product) => {
 		if (allProducts.find(item => item.id === product.id)) {
 			const products = allProducts.map(item =>
 				item.id === product.id
 					? { ...item, quantity: item.quantity + 1 }
 					: item
 			);
-			setTotal(total + product.price * product.quantity);
-			setCountProducts(countProducts + product.quantity);
+			setTotal(total + product.price);
+			setCountProducts(countProducts + 1);
 			return setAllProducts([...products]);
 		}
 
-		setTotal(total + product.price * product.quantity);
-		setCountProducts(countProducts + product.quantity);
-		setAllProducts([...allProducts, product]);
+		setTotal(total + product.price);
+		setCountProducts(countProducts + 1);
+		setAllProducts([...allProducts, { ...product, quantity: 1 }]);
 	};
 
 	return (
@@ -43,4 +44,6 @@ export const ProductList = ({
 			))}
 		</div>
 	);
-};
+}
+
+export default ProductList;

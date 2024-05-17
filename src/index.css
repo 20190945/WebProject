@@ -37,11 +37,12 @@ header {
 
 .container-icon {
 	position: relative;
+	top: 15px; left: 250px;
 }
 
 .count-products {
 	position: absolute;
-	top: 55%;
+	top: 30%;
 	right: 0;
 
 	background-color: #000;
@@ -64,7 +65,7 @@ header {
 	top: 50px;
 	right: 0;
 
-	background-color: #fff;
+	background-color: #fffffff8;
 	width: 400px;
 	z-index: 1;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
