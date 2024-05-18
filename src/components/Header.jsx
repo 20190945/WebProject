@@ -139,7 +139,9 @@ function Header({
 								<Link className="nav-link" to='/ayuda'>Ayuda</Link>
         					</li>	
         					<li className="nav-item">
-          						<Link className="nav-link" to='/cuenta'>Mi cuenta</Link>
+								<button>
+									<Link className="nav-link" to='/cuenta'>Mi cuenta</Link>
+								</button>
         					</li>
       					</ul>
     				</div>

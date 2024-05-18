@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Header from './Header'
 
-const Ofertas = () => {
+function Ofertas() {
+  const [allProducts, setAllProducts] = useState([]);
+	const [total, setTotal] = useState(0);
+	const [countProducts, setCountProducts] = useState(0);
+
   return (
-    <div>Ofertas</div>
+    <>
+      <Header 
+        allProducts={allProducts}
+			  setAllProducts={setAllProducts}
+			  total={total}
+			  setTotal={setTotal}
+			  countProducts={countProducts}
+			  setCountProducts={setCountProducts}
+      />
+      <div>Ofertas</div>
+    </>
   )
 }
 

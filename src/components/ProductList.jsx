@@ -1,5 +1,4 @@
 import React from 'react';
-import { data } from '../data';
 
 function ProductList({
 	allProducts,
@@ -8,6 +7,7 @@ function ProductList({
 	setCountProducts,
 	total,
 	setTotal,
+	products,
 }) {
 	const onAddProduct = (product) => {
 		if (allProducts.find(item => item.id === product.id)) {
@@ -28,7 +28,7 @@ function ProductList({
 
 	return (
 		<div className='container-items'>
-			{data.map(product => (
+			{products.map(product => (
 				<div className='item' key={product.id}>
 					<figure>
 						<img src={product.img} alt={product.nameProduct} />
