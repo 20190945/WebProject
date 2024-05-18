@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from "./Header";
 import ProductList from "./ProductList";
 import Buscador from "./Buscador";
-import { data } from '../data';
+import { productData } from '../productData';
 
 
 function Inicio() {
@@ -10,7 +10,7 @@ function Inicio() {
 	const [total, setTotal] = useState(0);
 	const [countProducts, setCountProducts] = useState(0);
 	const [consulta, setConsulta] = useState('');
-	const [productosFiltrados, setProductosFiltrados] = useState(data);
+	const [productosFiltrados, setProductosFiltrados] = useState(productData);
 
 	const busqueda = () => {
 		const resultados = data.filter(product =>

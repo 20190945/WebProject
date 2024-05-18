@@ -136,9 +136,47 @@ header {
 }
 
 /* Main */
-.container-items {
+.container-collections {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.grupo {
+	border-radius: 10px;
+}
+
+.grupo:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grupo img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	transition: all 0.5s;
+}
+
+.grupo figure {
+	overflow: hidden;
+}
+
+.grupo:hover img {
+	transform: scale(1.2);
+}
+
+.info-collection {
+	padding: 15px 30px;
+	line-height: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.container-items {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
 	gap: 20px;
 }
 
