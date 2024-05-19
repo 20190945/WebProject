@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Alumno3y4/Login.css'
+import '../components/Login.css'
 import { Link } from "react-router-dom";
 import Header from '../Header';
 import Footer from '../Footer';
