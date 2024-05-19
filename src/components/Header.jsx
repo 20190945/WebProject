@@ -8,7 +8,6 @@ function Header({
 	countProducts,
 	setCountProducts,
 	setTotal,
-	onAddProduct, 
 }) {
 	const [active, setActive] = useState(false);
 
