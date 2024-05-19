@@ -84,7 +84,6 @@ function Resultados() {
                             </figure>
                             <div className="text-info">
                                 <h2>{product.nameProduct}</h2>
-                                <p>{product.description}</p>
                                 <p className="price">${product.price}</p>
                                 <button onClick={() => onAddProduct(product)}>Añadir al carrito</button>
                             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { productData } from '../productData';
 import { collectionData } from '../collectionData';
 
@@ -10,16 +11,15 @@ function ProductList({
 	total,
 	setTotal,
 }) {
-	// Definir configuraciones fijas para los contenedores
 	const containersConfig = [
 		{ id: 1, type: 'collection', itemsPerContainer: 3, showNewItems: false, showBestSellers: true },
 		{ id: 2, type: 'product', itemsPerContainer: 10, showNewItems: false, showBestSellers: true },
 		{ id: 3, type: 'collection', itemsPerContainer: 3, showNewItems: true, showBestSellers: false },
 		{ id: 4, type: 'product', itemsPerContainer: 5, showNewItems: true, showBestSellers: false },
-		// Puedes añadir más configuraciones según sea necesario
 	];
 
-	const onAddProduct = (product) => {
+	const onAddProduct = (product, e) => {
+		e.stopPropagation();
 		if (allProducts.find(item => item.id === product.id)) {
 			const updatedProducts = allProducts.map(item =>
 				item.id === product.id
@@ -50,14 +50,18 @@ function ProductList({
 					return (
 						<div key={container.id} className='container-items'>
 							{filteredProducts.slice(0, container.itemsPerContainer).map(product => (
-								<div className='item' key={product.id}>
-									<figure>
-										<img src={product.img} alt={product.nameProduct} />
-									</figure>
+								<div key={product.id} className='item'>
+									<Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'black' }}>
+										<figure>
+											<img src={product.img} alt={product.nameProduct} />
+										</figure>
+										<div className='info-product'>
+											<h2>{product.nameProduct}</h2>
+										</div>
+									</Link>
 									<div className='info-product'>
-										<h2>{product.nameProduct}</h2>
 										<p className='price'>${product.price}</p>
-										<button onClick={() => onAddProduct(product)}>
+										<button onClick={(e) => onAddProduct(product, e)}>
 											Añadir al carrito
 										</button>
 									</div>
@@ -76,7 +80,7 @@ function ProductList({
 					return (
 						<div key={container.id} className='container-collections'>
 							{filteredCollections.slice(0, container.itemsPerContainer).map(collection => (
-								<div className='grupo' key={collection.id}>
+								<Link to={`/collection/${collection.id}`} key={collection.id} className='grupo' style={{ textDecoration: 'none', color: 'black' }}>
 									<figure>
 										<img src={collection.img} alt={collection.nameCollection} />
 									</figure>
@@ -84,7 +88,7 @@ function ProductList({
 										<h2>{collection.nameCollection}</h2>
 										<p className='descripcion'>Learn More</p>
 									</div>
-								</div>
+								</Link>
 							))}
 						</div>
 					);

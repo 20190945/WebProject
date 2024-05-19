@@ -3,12 +3,14 @@ export const productData = [
 		id: 1,
 		img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
 		nameProduct: 'Zapatos Nike',
-		description: '',
+		description: 'Nike Revolution 6 Next Nature con las Nike Revolution 6 Next Nature tendrás una comodidad versátil con amortiguación flexible. Estas zapatillas de running para hombres te acompañarán en cada kilómetro. Su iseño transpirable hecho de al menos un 20% de contenido reciclado en peso.',
 		price: 80,
 		quantity: 1,
 		isNew: false,
 		isBestSeller: true,
 		onOffer: false,
+		por: 'Nike',
+		isAvailable: true,
 	},
 	{
 		id: 2,
@@ -42,6 +44,8 @@ export const productData = [
 		isNew: false,
 		isBestSeller: true,
 		onOffer: false,
+		por: 'Coco Chanel',
+		isAvailable: false,
 	},
 	{
 		id: 5,
@@ -53,6 +57,8 @@ export const productData = [
 		isNew: false,
 		isBestSeller: true,
 		onOffer: true,
+		por: 'JBL',
+		isAvailable: true,
 	},
 	{
 		id: 6,
@@ -75,6 +81,8 @@ export const productData = [
 		isNew: false,
 		isBestSeller: true,
 		onOffer: true,
+		por: 'Yansus',
+		isAvailable: true,
 	},
 	{
 		id: 8,
@@ -86,6 +94,8 @@ export const productData = [
 		isNew: false,
 		isBestSeller: true,
 		onOffer: false,
+		por: 'Addidas',
+		isAvailable: true,
 	},
 	{
 		id: 9,
