@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from "./Header";
 import ProductList from "./ProductList";
 import Buscador from "./Buscador";
+import Footer from './Footer';
 import { productData } from '../productData';
 
 
@@ -45,6 +46,8 @@ function Inicio() {
 			setCountProducts={setCountProducts}
 			products={productosFiltrados}
 		/>
+		<br/>
+		<Footer/>
       </>
     )
   }
