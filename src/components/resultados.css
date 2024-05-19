@@ -1,0 +1,91 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .product-info figure {
+    margin: 0;
+  }
+
+  .product-info figure img {
+    width: 200px; 
+    height: auto; 
+  }
+  
+  .text-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 40px; 
+  }
+  
+  .text-info h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #000000;
+  }
+  
+  .text-info p {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .text-info .price {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #007ab3;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #1c9aa3;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  

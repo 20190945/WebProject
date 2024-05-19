@@ -14,7 +14,7 @@ function Inicio() {
 	const [productosFiltrados, setProductosFiltrados] = useState(productData);
 
 	const busqueda = () => {
-		const resultados = data.filter(product =>
+		const resultados = productData.filter(product =>
 			product.nameProduct.toLowerCase().includes(consulta.toLowerCase())
 		);
 		setProductosFiltrados(resultados);

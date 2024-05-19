@@ -8,6 +8,7 @@ function Header({
 	countProducts,
 	setCountProducts,
 	setTotal,
+	onAddProduct, 
 }) {
 	const [active, setActive] = useState(false);
 
@@ -38,13 +39,13 @@ function Header({
     				<div className="collapse navbar-collapse" id="navbarSupportedContent">
       					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
         					<li className="nav-item">
-								<Link className="nav-link" to='/mas_vendidos'>Mas vendidos</Link>
+								<Link className="nav-link" to='/resultados?opcion=bestsellers'>Más vendidos</Link>
         					</li>
         					<li className="nav-item">
-          						<Link className="nav-link" to='/nuevos'>Nuevos</Link>
+          						<Link className="nav-link" to='/resultados?opcion=new'>Nuevos</Link>
         					</li>
         					<li className="nav-item">
-								<Link className="nav-link" to='/ofertas'>Ofertas</Link>
+								<Link className="nav-link" to='/resultados?opcion=offer'>Ofertas</Link>
         					</li>
       					</ul>
     				</div>
