@@ -124,6 +124,10 @@ function Header({
 							<button className='btn-clear-all' onClick={onCleanCart}>
 								Vaciar Carrito
 							</button>
+
+							<Link className='btn-checkout' to='/checkout'>
+								<button>Checkout</button>
+							</Link>
 						</>
 					) : (
 						<p className='cart-empty'>El carrito está vacío</p>

@@ -5,6 +5,8 @@ import Ayuda from './components/Ayuda';
 import Cuenta from './components/Cuenta';
 import ProductDetails from './components/ProductDetails';
 import CollectionDetails from './components/CollectionDetails';
+import Checkout from './components/Checkout';
+import CompletaOrden from './components/CompletaOrden';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
 				<Route path='/collection/:id' Component={CollectionDetails}/>
 				<Route path='/ayuda' element={ <Ayuda/> }/>
 				<Route path='/cuenta' element={ <Cuenta/> }/>
+				<Route path='/checkout' element={ <Checkout/>}/>
+				<Route path='/completa' element={ <CompletaOrden/>}/>
 			</Routes>
 		</div>
 	);
