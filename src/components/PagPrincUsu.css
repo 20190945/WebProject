@@ -1,0 +1,31 @@
+body {
+    background-color: ghostwhite;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+#lateral {
+    color: black;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+#lateral aside {
+    width: 100%;
+}
+  
+#lateral aside h3 {
+    margin-top: 0;
+}
+  
+#lateral aside dt {
+    margin: 10px 0;
+    cursor: pointer;
+}

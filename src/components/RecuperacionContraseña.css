@@ -1,0 +1,52 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+}
+
+
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+}
+
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333; 
+}
+
+
+.regresar a {
+    color: blue;
+    text-decoration: none;
+}
+
+.regresar a:hover {
+    text-decoration: underline;
+}

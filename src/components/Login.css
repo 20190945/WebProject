@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.wrapper{
+    color: white;
+}
+
+h4{
+    color: black;
+    font-weight: normal;
+}
+
+.forgot-password a{
+    color: black;
+    text-decoration:underline;
+}
+
+.register a{
+    text-decoration: underline;
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+.main-content {
+    min-height: calc(100vh - 100px); /* Ajusta 100px a la altura de tu footer */
+    margin-bottom: 100px; /* Espacio para el footer */
+}
+
+.input-box input{
+    background-color: white;
+    border-radius: 5px;
+    height: 64px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 360px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper button{
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  width:360px;
+  height:64px;
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder{
+    font-size: large;
+    color: #00000080;
+    font-family: "Roboto", sans-serif;
+}
+

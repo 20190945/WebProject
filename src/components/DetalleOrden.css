@@ -1,0 +1,58 @@
+body {
+    background-color: ghostwhite;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.datos, .envio {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+  
+.datos h3, .envio h3 {
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+}
+  
+.datos {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.direccion, .pago {
+    width: 48%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.envio .tipo, .envio .item, .envio .resumen {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+  
+.envio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.envio .item, .envio .resumen {
+    width: 48%;
+}
+  
