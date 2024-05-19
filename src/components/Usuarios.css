@@ -1,0 +1,62 @@
+body{
+    background-color: ghostwhite;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    color: black;
+    width: 14%;
+    height: 80%;
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    font-style: normal;
+}
+
+.sidebar a{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-style: normal;
+}
+
+.primeraClaseUsuarios{
+    color: black;
+    background-color: lightgray;
+    position: fixed;
+    left: 22%;
+    right: 50px;
+    top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.buscadorUsuarios{
+    background-color: white;
+    border-radius: 10px;
+    border-color: gray;
+    position: fixed;
+    top: 140px;
+    padding: 10px;
+    left: 22%;
+    width: 75%;
+    font-style: italic;
+}
+
+.principal{
+    background-color: white;
+    position: fixed;
+    left: 22%;
+    top: 200px;
+    padding: 20px;
+    width: 73%;
+    height: 58%;
+}
+
+.principal table{
+    width: 100%;
+}
