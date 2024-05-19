@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../Alumno3y4/PagPrincUsu.css'
+import '../components/PagPrincUsu.css'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
